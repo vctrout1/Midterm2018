@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form method = "POST">
+    <input type="text" name="message"/>
+
+    <button type="submit">Submit</button>
+</form>
+{% for msg in chatroom %}
+<p>{{msg[1]}}</p>
+{% endfor %}
+
+{% endblock %}
+
+
